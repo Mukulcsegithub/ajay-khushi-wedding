@@ -92,11 +92,11 @@ function App() {
           <motion.article className="person-card" initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="portrait-placeholder bride-placeholder"><span>खु</span><small>BRIDE</small></div><p className="person-label">THE BRIDE</p><h3>{wedding.bride}</h3><p className="family-caption">सपरिवार</p><p className="family-name">{wedding.brideParents}</p>
           </motion.article>
-        </div>
           <div className="couple-heart">♥</div>
           <motion.article className="person-card" initial={{ opacity: 0, y: 35 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="portrait-placeholder groom-placeholder"><span>अ</span><small>GROOM</small></div><p className="person-label">THE GROOM</p><h3>{wedding.groom}</h3><p className="family-caption">सपरिवार</p><p className="family-name">{wedding.groomParents}</p>
           </motion.article>
+        </div>
         <div className="family-note"><Flower2/><p>With the love and blessings of our grandparents, relatives and well-wishers, we request the honour of your gracious presence.</p><Flower2/></div>
       </section>
 
