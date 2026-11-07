@@ -1,33 +1,34 @@
-# Ajay ❤️ Khushi — Royal Wedding Invitation
+# Ajay ❤️ Khushi — Wedding Invitation
 
-A responsive React + TypeScript wedding invitation site.
+A responsive React + TypeScript wedding invitation for mobile and desktop.
+
+## Add the Ranjha song
+
+The music player is configured to load this file:
+
+`public/audio/ranjha.mp3`
+
+Place your legally obtained MP3 recording of **“Ranjha”** (from *Shershaah*) at that exact path and filename. The audio file is not included because the commercial recording is copyrighted. Once added, the invitation plays it after the visitor taps **OPEN WEDDING INVITATION**. The floating music control pauses and resumes playback.
 
 ## Run locally
-1. Install Node.js 20+.
-2. In this folder run `npm install`.
-3. Run `npm run dev`.
-4. Open the local URL printed by Vite.
 
-## Personalize before publishing
-- Add the two original invitation card images to `public/images/` and use them to verify family names, exact venue spelling and procession/departure details.
-- Add your legally obtained/licensed song MP3 at `public/audio/do-anjaane-ajnabi.mp3`. Music starts only after the visitor opens the invitation.
-- Add couple photographs to `public/images/` only when supplied by the family. Until then, gallery cards are clearly labelled placeholders.
-- Update `src/config.ts` with verified family and venue details.
-- The Google Maps link intentionally uses a place-name search rather than invented coordinates.
-- Wishes are saved to localStorage in demo mode. To use Supabase, set the two Vite environment variables and create a `wishes` table with columns `id` (uuid primary key), `name` (text), `relationship` (text), `message` (text), `created_at` (timestamptz default now()).
+1. Install Node.js 20 or newer.
+2. Open this project folder in a terminal.
+3. Run `npm install`.
+4. Run `npm run dev`.
+5. Open the local URL printed by Vite.
 
-## Build
-`npm run build`
+## Personalize
 
-## Deploy
-Deploy the project folder to Vercel, Netlify or another static hosting provider. Set environment variables if using Supabase.
-
+Edit `src/config.ts` to update names, dates, venue, map link and family details. Confirm all event times and venue spelling with the family before publishing.
 
 ## Deploy to Vercel
-1. Push this project folder to a GitHub repository.
-2. In Vercel choose **Add New → Project**, import the repository.
-3. Framework preset: **Vite**. Build command: `npm run build`. Output directory: `dist`.
-4. Deploy. Add Supabase environment variables in Vercel Project Settings if using shared wishes.
-5. Ensure `public/audio/do-anjaane-ajnabi.mp3` is included in the deployed project (only if you have rights to use that recording).
 
-The layout includes a mobile navigation menu, responsive sections, and tap-friendly music controls. Test on a real phone after deployment.
+1. Push this project folder to GitHub.
+2. Import the repository in Vercel.
+3. Select **Vite** as the framework.
+4. Build command: `npm run build`
+5. Output directory: `dist`
+6. Deploy.
+
+Keep `public/audio/ranjha.mp3` in the project before deploying if you want the Ranjha track to play.
