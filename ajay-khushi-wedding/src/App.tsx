@@ -56,7 +56,7 @@ function App() {
           <div className="intro-kicker">॥ मंगल परिणय निमंत्रण ॥</div>
           <div className="envelope-wrap"><div className="envelope"><div className="envelope-flap"/><div className="envelope-letter"><span>अ</span><small>शुभ विवाह</small></div><div className="envelope-seal">❀</div></div></div>
           <p className="intro-blessing">स्नेह, संस्कार और शुभाशीष के साथ</p>
-          <h1 className="intro-names">अजय <b>♥</b> खुशी</h1>
+          <h1 className="intro-names">खुशी <b>♥</b> अजय</h1>
           <p className="intro-date">20 & 21 नवंबर 2026</p>
           <button className="gold-button open-button" onClick={openInvitation}><span>OPEN WEDDING INVITATION</span><ChevronDown size={16}/></button>
           <p className="intro-hint"><Music2 size={13}/> Ranjha गाने के साथ इस खास पल का आनंद लें</p>
@@ -76,7 +76,7 @@ function App() {
         <div className="hero-texture"/>
         <div className="hero-content">
           <div className="hero-symbol">ॐ</div><p className="eyebrow">WITH THE BLESSINGS OF OUR ELDERS</p>
-          <h1>अजय <span>♥</span> खुशी</h1><p className="hero-subtitle">Two Hearts, One Beautiful Journey</p>
+          <h1>खुशी <span>♥</span> अजय</h1><p className="hero-subtitle">Two Hearts, One Beautiful Journey</p>
           <Ornament/>
           <p className="hero-copy">With immense joy and the blessings of our families,<br/>we invite you to celebrate the beginning of our forever.</p>
           <div className="hero-date"><CalendarDays size={17}/> 20 — 21 NOVEMBER 2026</div>
@@ -119,7 +119,7 @@ function App() {
       </section>
 
     </main>
-    <footer className="footer"><div className="footer-mandala">✺</div><p className="eyebrow">WITH LOVE & BLESSINGS</p><h2>अजय <span>♥</span> खुशी</h2><Ornament small/><p>आपकी उपस्थिति एवं आशीर्वाद हमारे लिए अमूल्य हैं।</p><p className="footer-made">MADE WITH LOVE & BLESSINGS</p><small>20 — 21 NOVEMBER 2026</small></footer>
+    <footer className="footer"><div className="footer-mandala">✺</div><p className="eyebrow">WITH LOVE & BLESSINGS</p><h2>खुशी <span>♥</span> अजय</h2><Ornament small/><p>आपकी उपस्थिति एवं आशीर्वाद हमारे लिए अमूल्य हैं।</p><small>20 — 21 NOVEMBER 2026</small><p className="footer-made">Designed By ❤️ Mithu</p></footer>
     <button className="floating-music" onClick={toggleMusic} aria-label={musicOn ? 'Pause wedding music' : 'Play wedding music'}>{musicOn ? <Pause size={19}/> : <Play size={19}/>}<span>{musicOn ? 'PAUSE MUSIC' : 'PLAY MUSIC'}</span></button>
   </div>
 }
